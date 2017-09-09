@@ -1,1 +1,24 @@
-.box { width: 100px; height: 100px; background-color: firebrick; }
+* { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+
+header { height: 80px; background-color: #000; }
+
+h1 { color: white; padding: 10px; float: left; line-height: 60px; }
+
+.category {  }
+.category li { float: left; }
+.category li a { color: #fff; padding: 10px 15px; line-height: 80px; }
+.category li a:hover { background-color: yellowgreen; }
+
+
+
+
+
+
+
+
+
+
+
+
