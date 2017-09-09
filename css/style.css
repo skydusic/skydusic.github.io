@@ -16,7 +16,7 @@ header .category > li:hover .sub { visibility: visible;
 	transform: translateY(0px); opacity: 1; transition: all 0.5s ease;
 } /*position absolute 때문에 큰 상관이 없다*/
 
-.category .sub { background-color: #282d30; padding: 20px; position: absolute; top: 100%; left: 0; width: 500px; border-top: 1px solid #96da47; visibility: hidden; transform: translateY(20px); opacity: 0;
+.category .sub { background-color: #282d30; padding: 20px; position: absolute; top: 100%; left: 0; width: 500px; border-top: 1px solid #96da47; visibility: hidden; transform: translateY(20px); opacity: 0; z-index: 100;
 }
 .submenu { float: left; width: 25%; }
 .submenu li {  }
@@ -28,6 +28,6 @@ header .category > li:hover .sub { visibility: visible;
 .slider .banner { width: 100%; }
 
 
-
+.own-nav { float: left; }
 
 
