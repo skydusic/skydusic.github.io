@@ -24,10 +24,115 @@ header .category > li:hover .sub { visibility: visible;
 .submenu li a:hover { color: #96da47;  }
 .submenu li.subtitle { color: #fff; font-size: 15px; margin-bottom: 10px; }
 
-.slider { height: 1000px; }
+.slider {  }
 .slider .banner { width: 100%; }
 
+#dealSection { padding: 40px 0; background-color: #96da47; }
+.deal { height: 46px; text-align: center; line-height: 46px; }
+.deal > div { display: inline-block; vertical-align: middle; }
+.deal_title { color: #fff; font-family: impact; font-size: 30px; }
+.dash { width: 40px; height: 1px; background-color: #222; margin: 0 10px; }
+.deal_desc { font-size: 24px; }
+.deal_btn { width: 140px; background-color: #fff; color: #222; font-weight: bold; margin-left: 20px; font-size: 12px; cursor: pointer; 
+	position: relative;
+}
 
-.own-nav { float: left; }
+.deal_btn::after {
+	content: 'VIEW ALL OFFERS'; /*가상선택자의 필수속성*/ display: block; color: #fff;
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #222;
+	transform: scaleY(0); transform-origin: bottom;
+	transition: all 0.4s ease;
+}
+/*딜 버튼에 호버하면 after가*/
+.deal_btn:hover::after{
+	transform: scaleY(1)
+}
+
+#productView { padding: 80px 0; width: 1200px; margin: 0 auto; }
+.product_title { text-align: center; font-family: impact; font-size: 30px;  }
+.under_line { margin: 20px auto 30px; width: 30px; height: 1px; background-color: #ccc; }
+
+
+/*.product_view { width: 1200px; height: 1000px; margin: 0 auto; }
+.image { float: left; margin: 10px; }
+.image img { visibility: hidden; transform: rotateY(90deg) scale(0.7); vertical-align: middle; transition: all 0.4s ease; }
+.image:hover img { visibility: visible; transform: scale(1); transition: all 0.4s ease; }
+.image1 { background-image: url(../images/2-280x400.jpg);  }
+.image2 { background-image: url(../images/3-280x400.jpg);  }
+.image3 { background-image: url(../images/5-280x400.jpg);  }
+.image4 { background-image: url(../images/6-280x400.jpg);  }*/
+
+
+.view_item { width: 25%; float: left; }
+.view_inner { margin: 0 15px; }
+.view_inner .dp , .view_inner .motion { width: 100%; }
+.thumnails { position: relative; }
+.thumnails img { display: block; } /*아래 공백을 없애기 위해서*/
+.view_inner .thumnails { overflow: hidden; }
+.thumnails .motion { position: absolute; top: 0; left: 0; }
+
+.image { position: relative; }
+.block { position: absolute; bottom: 0; width: 100%; padding: 3px 2px; box-sizing: border-box; }
+.block_list {  }
+.block_list li { height: 40px; width: 40px; background-color: #fff; float: left; margin: 0 1px;
+	text-align: center; line-height: 40px;
+}
+.block_list li.cart { width: calc(100% - 86px); }
+
+
+/* 기능을 만들어보자! */
+/*.view_inner { overflow: hidden; }
+.view_inner .dp , .view_inner .motion { transition: all 0.4s ease; }
+.view_inner .image:hover .motion { transform: rotateY(0) scale(1); }
+.view_inner .motion { transform: rotateY(90deg) scale(0.8); }
+
+.view_inner .block { overflow: hidden; }
+.view_inner .block_list { transform: translateY(50px); transition: all 0.4s ease; }
+.view_inner:hover .block_list { transform: translateY(0); }
+
+.caption { text-align: center; margin-top: 20px; }
+.caption a { display: block; }*/
+
+.view_inner .image { overflow: hidden; }
+.block { transform: translateY(46px); }
+.view_inner:hover .block { transform: translateY(0) scale(1); transition: all 0.4s ease; }
+
+.thumnails { perspective: 500px; }/*원근감을 추가하므로써 좀 더 좋은 효과를 볼 수 있다! */
+.motion { transform: rotateY(90deg) scale(0.5); transition: all .5s ease; }
+.thumnails:hover .motion { transform: rotateY(0); }
+
+
+
+.swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
 
 
